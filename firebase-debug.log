@@ -1,0 +1,40 @@
+[debug] [2024-09-23T19:49:37.386Z] ----------------------------------------------------------------------
+[debug] [2024-09-23T19:49:37.389Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\MARCO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-09-23T19:49:37.389Z] CLI Version:   13.19.0
+[debug] [2024-09-23T19:49:37.389Z] Platform:      win32
+[debug] [2024-09-23T19:49:37.389Z] Node Version:  v20.17.0
+[debug] [2024-09-23T19:49:37.389Z] Time:          Mon Sep 23 2024 14:49:37 GMT-0500 (hora estándar de Perú)
+[debug] [2024-09-23T19:49:37.389Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-23T19:49:37.465Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-23T19:49:37.466Z] > authorizing via signed-in user (teccodeservicios@gmail.com)
+[debug] [2024-09-23T19:49:37.466Z] [iam] checking project bootstrap-a1ca4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-23T19:49:37.467Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootstrap-a1ca4:testIamPermissions [none]
+[debug] [2024-09-23T19:49:37.468Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootstrap-a1ca4:testIamPermissions x-goog-quota-user=projects/bootstrap-a1ca4
+[debug] [2024-09-23T19:49:37.468Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootstrap-a1ca4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-23T19:49:38.763Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootstrap-a1ca4:testIamPermissions 200
+[debug] [2024-09-23T19:49:38.763Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bootstrap-a1ca4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-23T19:49:38.764Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bootstrap-a1ca4 [none]
+[debug] [2024-09-23T19:49:39.371Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bootstrap-a1ca4 200
+[debug] [2024-09-23T19:49:39.372Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bootstrap-a1ca4 {"projectId":"bootstrap-a1ca4","projectNumber":"438660635335","displayName":"bootstrap","name":"projects/bootstrap-a1ca4","resources":{"hostingSite":"bootstrap-a1ca4"},"state":"ACTIVE","etag":"1_56d62c8c-13ca-45d5-850e-c27d195ed3c0"}
+[info] 
+[info] === Deploying to 'bootstrap-a1ca4'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-09-23T19:49:39.377Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bootstrap-a1ca4/versions [none]
+[debug] [2024-09-23T19:49:39.377Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bootstrap-a1ca4/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-09-23T19:49:41.419Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bootstrap-a1ca4/versions 200
+[debug] [2024-09-23T19:49:41.420Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bootstrap-a1ca4/versions {"name":"projects/438660635335/sites/bootstrap-a1ca4/versions/c3b85d20a3ceae35","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[bootstrap-a1ca4]: beginning deploy... 
+[info] i  hosting[bootstrap-a1ca4]: found 181421 files in /. 
+[debug] [2024-09-23T19:50:37.770Z] [hosting] uploading with 200 concurrency
+[debug] [2024-09-23T19:50:37.771Z] [hosting] hash cache [] not populated
+[debug] [2024-09-23T19:50:37.829Z] Error: EBUSY: resource busy or locked, open 'C:\Users\MARCO\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-23T19:50:37.830Z] Error: EBUSY: resource busy or locked, open 'C:\Users\MARCO\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-09-23T19:50:37.831Z] Error: EBUSY: resource busy or locked, open 'C:\Users\MARCO\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
